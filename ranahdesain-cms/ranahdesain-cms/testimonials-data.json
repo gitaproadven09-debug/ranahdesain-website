@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "id": "testi-1",
+      "name": "Nama Pelanggan",
+      "business": "Pemilik UMKM Kuliner",
+      "rating": 5,
+      "quote": "Prosesnya cepat dan hasil desainnya rapi banget. Tim ranahdesain juga enak diajak diskusi revisi.",
+      "photo": ""
+    },
+    {
+      "id": "testi-2",
+      "name": "Nama Pelanggan",
+      "business": "Panitia Wisuda Kampus",
+      "rating": 5,
+      "quote": "Banner wisudanya bagus dan sesuai request, pengerjaan juga tepat waktu sebelum hari-H.",
+      "photo": ""
+    }
+  ]
+}

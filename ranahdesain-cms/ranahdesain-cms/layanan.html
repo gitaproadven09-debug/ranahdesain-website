@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layanan & Harga — ranahdesain.store</title>
+<meta name="description" content="Pricelist Ranahdesain: paket kelola media sosial, logo & branding, dan desain satuan/eceran.">
+<link rel="icon" href="images/logo-ranahdesain.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary:        '#15bb81',
+          'primary-deep':  '#0e9a68',
+          secondary:      '#24c861',
+          accent:         '#8c60f5',
+          'accent-deep':  '#7248e0',
+          ink:            '#0b1f17',
+          'ink-soft':     '#56645f',
+          line:           '#e7ece9',
+          'bg-soft':      '#f9fafb',
+          'primary-soft': '#e7fbf3',
+          'accent-soft':  '#f1ecfe',
+        },
+        fontFamily: {
+          display: ['"Bricolage Grotesque"', 'sans-serif'],
+          sans: ['Manrope', 'sans-serif'],
+          mono: ['"JetBrains Mono"', 'monospace'],
+        },
+        boxShadow: {
+          soft: '0 2px 10px rgba(11,31,23,.05)',
+          card: '0 14px 34px -14px rgba(11,31,23,.16)',
+          'card-lg': '0 24px 60px -20px rgba(11,31,23,.22)',
+          glow: '0 0 0 1px rgba(21,187,129,.15), 0 18px 40px -16px rgba(21,187,129,.35)',
+        },
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans text-ink antialiased">
+<aside id="dash-sidebar" class="hidden lg:flex flex-col fixed left-0 top-0 bottom-0 z-40 w-[76px] bg-white border-r border-line">
+  <div class="h-[76px] flex items-center justify-center border-b border-line shrink-0">
+    <button id="sb-toggle" aria-label="Perluas sidebar" class="w-10 h-10 rounded-xl grid place-items-center hover:bg-primary-soft text-primary transition-colors">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h16"/></svg>
+    </button>
+  </div>
+
+  <nav class="flex-1 overflow-y-auto custom-scroll py-4 px-3 space-y-6">
+    <div>
+      <div class="sb-group-label px-2 mb-2 text-[11px] font-mono uppercase tracking-wider text-ink-soft">Menu</div>
+      <a href="index.html" class="sb-link flex items-center gap-3 px-2.5 py-2.5 rounded-xl text-ink-soft hover:bg-primary-soft hover:text-primary-deep transition-colors">
+        <svg class="shrink-0 sb-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>
+        <span class="sb-label text-sm font-semibold">Beranda</span>
+      </a>
+      <a href="layanan.html" class="sb-link active flex items-center gap-3 px-2.5 py-2.5 rounded-xl text-primary-deep transition-colors">
+        <svg class="shrink-0 sb-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 6l3 14h10l3-14"/><path d="M9 11h6"/></svg>
+        <span class="sb-label text-sm font-semibold">Layanan &amp; Harga</span>
+      </a>
+      <a href="portofolio.html" class="sb-link flex items-center gap-3 px-2.5 py-2.5 rounded-xl text-ink-soft hover:bg-primary-soft hover:text-primary-deep transition-colors">
+        <svg class="shrink-0 sb-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="15" rx="2.5"/><circle cx="8.5" cy="9.5" r="1.6"/><path d="m21 15-5-5-4.5 4.5"/></svg>
+        <span class="sb-label text-sm font-semibold">Portofolio</span>
+      </a>
+      <a href="faq.html" class="sb-link flex items-center gap-3 px-2.5 py-2.5 rounded-xl text-ink-soft hover:bg-primary-soft hover:text-primary-deep transition-colors">
+        <svg class="shrink-0 sb-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 4.9.8c0 1.7-2.4 2-2.4 3.7"/><path d="M12 17.2v.1"/></svg>
+        <span class="sb-label text-sm font-semibold">FAQ</span>
+      </a>
+    </div>
+
+    <div>
+      <div class="sb-group-label px-2 mb-2 text-[11px] font-mono uppercase tracking-wider text-ink-soft">Kategori Desain</div>
+      <a href="portofolio.html?cat=branding" class="flex items-center gap-3 px-2.5 py-2.5 rounded-xl text-ink-soft hover:bg-primary-soft hover:text-primary-deep transition-colors">
+        <span class="w-5 h-5 shrink-0 rounded-md grid place-items-center" style="background:#e7fbf3;color:#0e9a68"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5v17M4 12h16"/></svg></span>
+        <span class="sb-label text-sm font-semibold">Branding</span>
+      </a>
+      <a href="portofolio.html?cat=sosmed" class="flex items-center gap-3 px-2.5 py-2.5 rounded-xl text-ink-soft hover:bg-primary-soft hover:text-primary-deep transition-colors">
+        <span class="w-5 h-5 shrink-0 rounded-md grid place-items-center" style="background:#f1ecfe;color:#7248e0"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="4"/></svg></span>
+        <span class="sb-label text-sm font-semibold">Social Media</span>
+      </a>
+      <a href="portofolio.html?cat=uiux" class="flex items-center gap-3 px-2.5 py-2.5 rounded-xl text-ink-soft hover:bg-primary-soft hover:text-primary-deep transition-colors">
+        <span class="w-5 h-5 shrink-0 rounded-md grid place-items-center" style="background:#e7fbf3;color:#0e9a68"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="13" rx="2"/><path d="M8 21h8"/></svg></span>
+        <span class="sb-label text-sm font-semibold">UI/UX</span>
+      </a>
+      <a href="portofolio.html?cat=cetak" class="flex items-center gap-3 px-2.5 py-2.5 rounded-xl text-ink-soft hover:bg-primary-soft hover:text-primary-deep transition-colors">
+        <span class="w-5 h-5 shrink-0 rounded-md grid place-items-center" style="background:#f1ecfe;color:#7248e0"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="8" rx="1.5"/><path d="M7 15v3h10v-3"/></svg></span>
+        <span class="sb-label text-sm font-semibold">Cetak &amp; Promosi</span>
+      </a>
+    </div>
+
+    <div>
+      <div class="sb-group-label px-2 mb-2 text-[11px] font-mono uppercase tracking-wider text-ink-soft">Aksi Cepat</div>
+      <a href="index.html#form-pesanan" class="flex items-center gap-3 px-2.5 py-2.5 rounded-xl text-ink-soft hover:bg-primary-soft hover:text-primary-deep transition-colors">
+        <svg class="shrink-0 sb-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/><path d="M9 15h5"/><path d="M18.4 3.6a1.7 1.7 0 0 1 2.4 2.4L13 13.7l-3.4.7.7-3.4Z"/></svg>
+        <span class="sb-label text-sm font-semibold">Form Pesanan</span>
+      </a>
+      <a href="index.html#kontak" class="flex items-center gap-3 px-2.5 py-2.5 rounded-xl text-ink-soft hover:bg-primary-soft hover:text-primary-deep transition-colors">
+        <svg class="shrink-0 sb-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6.5 12 13 2 6.5"/><rect x="2" y="4.5" width="20" height="15" rx="2.5"/></svg>
+        <span class="sb-label text-sm font-semibold">Hubungi Kami</span>
+      </a>
+    </div>
+  </nav>
+
+  <div class="p-3 border-t border-line shrink-0">
+    <a href="https://wa.me/6289646417533?text=Halo%20ranahdesain.store%21%20Saya%20mau%20mulai%20proyek%20desain%20%F0%9F%99%8C" target="_blank" rel="noopener"
+       class="flex items-center gap-3 px-2.5 py-2.5 rounded-xl bg-primary-soft text-primary-deep hover:bg-primary hover:text-white transition-colors">
+      <svg class="shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.1-.2 0-.4.1-.5.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.3 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 2-1.4.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.5-.3Z"/><path d="M12 3.5A8.5 8.5 0 0 0 4.6 16.6L3.5 20.5l4-1a8.5 8.5 0 1 0 4.5-16Z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+      <span class="sb-label text-sm font-bold">Chat Cepat</span>
+    </a>
+  </div>
+</aside>
+<div id="sb-scrim" class="sb-scrim lg:hidden"></div>
+<div id="page" class="lg:pl-[76px] transition-[padding] duration-300">
+<header id="navbar" class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-line">
+  <div class="max-w-[1240px] mx-auto px-5 sm:px-8 h-[76px] flex items-center justify-between gap-4">
+    <div class="flex items-center gap-2">
+      <button id="mobile-sb-open" aria-label="Buka menu navigasi" class="lg:hidden w-9 h-9 rounded-lg grid place-items-center text-ink hover:bg-bg-soft">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <a href="index.html" class="flex items-center gap-2.5 group">
+        <img src="images/logo-ranahdesain.jpg" alt="Logo Ranahdesain" class="w-9 h-9 rounded-xl object-cover shadow-soft group-hover:rotate-[-6deg] transition-transform">
+        <span class="font-display font-extrabold text-[18px] tracking-tight text-ink">ranahdesain<span class="text-primary">.store</span></span>
+      </a>
+    </div>
+
+    <nav class="hidden md:flex items-center gap-1 text-[14.5px] font-semibold text-ink-soft">
+      <a href="index.html" class="px-3.5 py-2 rounded-lg hover:text-primary-deep hover:bg-primary-soft transition-colors">Beranda</a>
+      <a href="layanan.html" class="px-3.5 py-2 rounded-lg text-primary-deep bg-primary-soft transition-colors">Layanan</a>
+      <a href="portofolio.html" class="px-3.5 py-2 rounded-lg hover:text-primary-deep hover:bg-primary-soft transition-colors">Portofolio</a>
+      <a href="faq.html" class="px-3.5 py-2 rounded-lg hover:text-primary-deep hover:bg-primary-soft transition-colors">FAQ</a>
+      
+    </nav>
+
+    <a href="https://wa.me/6289646417533?text=Halo%20ranahdesain.store%21%20Saya%20mau%20konsultasi%20gratis%20soal%20kebutuhan%20desain%20saya%20%F0%9F%99%8C" target="_blank" rel="noopener"
+       class="btn-shine shrink-0 inline-flex items-center gap-2 bg-accent hover:bg-accent-deep text-white text-[13.5px] sm:text-[14.5px] font-bold px-4 sm:px-5 py-2.5 rounded-full shadow-[0_10px_24px_-10px_rgba(140,96,245,.6)] transition-colors">
+      <span class="hidden sm:inline">Konsultasi Gratis</span><span class="sm:hidden">Konsultasi</span>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</header>
+
+<main>
+<section class="relative max-w-[1240px] mx-auto px-5 sm:px-8 pt-16 pb-6">
+  <div class="reveal max-w-2xl">
+    <span class="inline-flex items-center gap-1.5 text-[12.5px] font-bold font-mono uppercase tracking-wider text-primary-deep bg-primary-soft px-3 py-1 rounded-full">Layanan &amp; Harga</span>
+    <h1 class="font-display font-extrabold text-[32px] sm:text-[42px] text-ink mt-4 leading-tight">Ranahdesain</h1>
+    <p class="text-ink-soft text-[15.5px] leading-relaxed mt-4">Semua paket sudah termasuk revisi dan konsultasi. Pilih yang paling pas dengan kebutuhanmu, atau chat kami kalau masih ragu paket mana yang cocok.</p>
+  </div>
+  <img src="images/logo_typo-04.png" alt="" aria-hidden="true"
+       class="hidden lg:block absolute right-6 sm:right-10 top-2 w-[130px] xl:w-[160px] opacity-95 rotate-6 pointer-events-none select-none drop-shadow-[0_18px_30px_rgba(11,31,23,0.12)]">
+</section>
+
+<!-- KELOLA MEDIA SOSIAL -->
+<section id="medsos" class="max-w-[1240px] mx-auto px-5 sm:px-8 py-14">
+  <div class="mb-9 reveal">
+    <h2 class="font-display font-extrabold text-[26px] sm:text-[30px] text-ink">Paket Kelola Media Sosial (Bulanan)</h2>
+    <p class="text-ink-soft text-[14.5px] mt-2">Layanan langganan bulanan untuk konten Instagram — desain, caption, dan strategi konten.</p>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-6 reveal">
+    <div class="rounded-3xl border border-line bg-white p-7 shadow-soft flex flex-col">
+      <h3 class="font-display font-bold text-[19px] text-ink">Starter</h3>
+      <div class="font-display font-extrabold text-[28px] text-ink mt-2">Rp159.000<span class="text-[13px] font-sans font-bold text-ink-soft"> /bulan</span></div>
+      <p class="text-[13px] text-ink-soft mt-1.5">Pemula yang baru mulai konsisten di media sosial.</p>
+      <ul class="mt-5 space-y-2.5 text-[13.5px] text-ink flex-1">
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>7 desain feed Instagram (single post)</li>
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Caption siap pakai untuk setiap postingan</li>
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Ide konten (bisa request tema)</li>
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Riset hashtag</li>
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>2 desain story Instagram bonus</li>
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Template repost story</li>
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Free konsultasi konten</li>
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Akses editable desain</li>
+      </ul>
+      <a href="index.html#form-pesanan" class="mt-6 text-center border-2 border-ink/10 hover:border-primary hover:text-primary-deep text-ink font-bold text-[14px] px-5 py-3 rounded-full transition-colors">Pilih Starter</a>
+    </div>
+
+    <div class="rounded-3xl border-2 border-primary bg-white p-7 shadow-card-lg flex flex-col relative">
+      <span class="absolute -top-3 left-7 bg-primary text-white text-[11px] font-bold font-mono uppercase tracking-wide px-3 py-1 rounded-full">Paling Laris</span>
+      <h3 class="font-display font-bold text-[19px] text-ink">Growth</h3>
+      <div class="font-display font-extrabold text-[28px] text-ink mt-2">Rp349.000<span class="text-[13px] font-sans font-bold text-ink-soft"> /bulan</span></div>
+      <p class="text-[13px] text-ink-soft mt-1.5">Brand yang ingin tampil lebih profesional dan konsisten.</p>
+      <ul class="mt-5 space-y-2.5 text-[13.5px] text-ink flex-1">
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>20 desain feed Instagram (single + carousel)</li>
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Caption + copywriting</li>
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Ide konten + konten plan mingguan</li>
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>3 desain story Instagram</li>
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Template repost story</li>
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Template feed grid (biar akun rapi)</li>
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Riset hashtag &amp; tren</li>
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Free HD file + akses editable desain</li>
+      </ul>
+      <a href="index.html#form-pesanan" class="mt-6 text-center bg-primary hover:bg-primary-deep text-white font-bold text-[14px] px-5 py-3 rounded-full transition-colors">Pilih Growth</a>
+    </div>
+
+    <div class="rounded-3xl border border-line bg-white p-7 shadow-soft flex flex-col">
+      <h3 class="font-display font-bold text-[19px] text-ink">Pro</h3>
+      <div class="font-display font-extrabold text-[28px] text-ink mt-2">Mulai Rp500.000<span class="text-[13px] font-sans font-bold text-ink-soft"> /bulan</span></div>
+      <p class="text-[13px] text-ink-soft mt-1.5">Bisnis yang serius bangun branding dan engagement.</p>
+      <ul class="mt-5 space-y-2.5 text-[13.5px] text-ink flex-1">
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>30 desain feed Instagram (single, carousel)</li>
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Caption + copywriting profesional</li>
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Konten plan bulanan + kalender konten</li>
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>4 desain story Instagram</li>
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Template repost + story template</li>
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Template feed grid + warna brand konsisten</li>
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Riset hashtag &amp; tren mendalam</li>
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Free HD file + source file (bisa diedit)</li>
+        <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Konsultasi via chat &amp; Zoom</li>
+      </ul>
+      <a href="index.html#form-pesanan" class="mt-6 text-center border-2 border-ink/10 hover:border-primary hover:text-primary-deep text-ink font-bold text-[14px] px-5 py-3 rounded-full transition-colors">Pilih Pro</a>
+    </div>
+  </div>
+</section>
+
+<!-- LOGO -->
+<section id="logo" class="bg-bg-soft border-y border-line py-14">
+  <div class="max-w-[1240px] mx-auto px-5 sm:px-8">
+    <div class="mb-9 reveal">
+      <h2 class="font-display font-extrabold text-[26px] sm:text-[30px] text-ink">Pricelist Logo Ranahdesain</h2>
+      <p class="text-ink-soft text-[14.5px] mt-2">Logo original dari konsep sampai file siap pakai untuk digital maupun cetak.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 reveal">
+      <div class="rounded-3xl border border-line bg-white p-7 shadow-soft flex flex-col">
+        <h3 class="font-display font-bold text-[19px] text-ink">Basic</h3>
+        <div class="font-display font-extrabold text-[28px] text-ink mt-2">Rp150.000</div>
+        <p class="text-[13px] text-ink-soft mt-1.5">UMKM dan bisnis baru yang mulai membangun identitas.</p>
+        <ul class="mt-5 space-y-2.5 text-[13.5px] text-ink flex-1">
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span>1 konsep logo original (bukan template)</li>
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span>3x revisi maksimal</li>
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Konsultasi via online meeting room</li>
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span>File final PNG &amp; JPG (HD) + file mentah</li>
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Warna &amp; tipografi sesuai permintaan</li>
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Garansi kepuasan sampai batas paket</li>
+        </ul>
+        <a href="index.html#form-pesanan" class="mt-6 text-center border-2 border-ink/10 hover:border-primary hover:text-primary-deep text-ink font-bold text-[14px] px-5 py-3 rounded-full transition-colors">Pilih Basic</a>
+      </div>
+
+      <div class="rounded-3xl border-2 border-primary bg-white p-7 shadow-card-lg flex flex-col relative">
+        <span class="absolute -top-3 left-7 bg-primary text-white text-[11px] font-bold font-mono uppercase tracking-wide px-3 py-1 rounded-full">Paling Laris</span>
+        <h3 class="font-display font-bold text-[19px] text-ink">Standard</h3>
+        <div class="font-display font-extrabold text-[28px] text-ink mt-2">Rp250.000</div>
+        <p class="text-[13px] text-ink-soft mt-1.5">Startup dan brand baru yang ingin punya pilihan.</p>
+        <ul class="mt-5 space-y-2.5 text-[13.5px] text-ink flex-1">
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span>2 konsep logo berbeda untuk dipilih</li>
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span>3x revisi pada konsep pilihan</li>
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Konsultasi via online meeting room</li>
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span>File final PNG &amp; JPG (HD) + file mentah</li>
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Termasuk versi warna &amp; hitam-putih</li>
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Panduan singkat penggunaan logo</li>
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Garansi kepuasan sampai batas paket</li>
+        </ul>
+        <a href="index.html#form-pesanan" class="mt-6 text-center bg-primary hover:bg-primary-deep text-white font-bold text-[14px] px-5 py-3 rounded-full transition-colors">Pilih Standard</a>
+      </div>
+
+      <div class="rounded-3xl border border-line bg-white p-7 shadow-soft flex flex-col">
+        <h3 class="font-display font-bold text-[19px] text-ink">Premium</h3>
+        <div class="font-display font-extrabold text-[28px] text-ink mt-2">Rp500.000</div>
+        <p class="text-[13px] text-ink-soft mt-1.5">Bisnis yang ingin hasil profesional dan siap cetak.</p>
+        <ul class="mt-5 space-y-2.5 text-[13.5px] text-ink flex-1">
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span>3 konsep logo unik dengan riset singkat</li>
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Bebas revisi sepuasnya</li>
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Konsultasi via chat &amp; Zoom (tatap muka)</li>
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span>File lengkap: PNG, JPG, PDF, source (AI/CDR/PSD)</li>
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Termasuk mockup untuk presentasi</li>
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Filosofi singkat di balik desain logo</li>
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span>Panduan penggunaan brand (mini guideline)</li>
+        </ul>
+        <a href="index.html#form-pesanan" class="mt-6 text-center border-2 border-ink/10 hover:border-primary hover:text-primary-deep text-ink font-bold text-[14px] px-5 py-3 rounded-full transition-colors">Pilih Premium</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ECERAN / SATUAN -->
+<section id="satuan" class="max-w-[1240px] mx-auto px-5 sm:px-8 py-14">
+  <div class="mb-9 reveal">
+    <h2 class="font-display font-extrabold text-[26px] sm:text-[30px] text-ink">Desain Eceran / Satuan</h2>
+    <p class="text-ink-soft text-[14.5px] mt-2">Butuh satu desain saja? Ini pricelist per item — semua sudah termasuk bonus gratis revisi 3x.</p>
+  </div>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal">
+    <div class="rounded-2xl border border-line bg-white p-5 flex items-center justify-between"><span class="font-bold text-[14.5px] text-ink">Poster</span><span class="font-mono text-[13.5px] text-primary-deep">Rp25.000</span></div>
+    <div class="rounded-2xl border border-line bg-white p-5 flex items-center justify-between"><span class="font-bold text-[14.5px] text-ink">Infografis</span><span class="font-mono text-[13.5px] text-primary-deep">Rp40.000</span></div>
+    <div class="rounded-2xl border border-line bg-white p-5 flex items-center justify-between"><span class="font-bold text-[14.5px] text-ink">PPT / slide</span><span class="font-mono text-[13.5px] text-primary-deep">Rp4.000–6.000</span></div>
+    <div class="rounded-2xl border border-line bg-white p-5 flex items-center justify-between"><span class="font-bold text-[14.5px] text-ink">Feed Instagram (1 slide)</span><span class="font-mono text-[13.5px] text-primary-deep">Rp20.000</span></div>
+    <div class="rounded-2xl border border-line bg-white p-5 flex items-center justify-between"><span class="font-bold text-[14.5px] text-ink">Carousel (3 slide)</span><span class="font-mono text-[13.5px] text-primary-deep">Rp40.000</span></div>
+    <div class="rounded-2xl border border-line bg-white p-5 flex items-center justify-between"><span class="font-bold text-[14.5px] text-ink">Brosur / Flyer</span><span class="font-mono text-[13.5px] text-primary-deep">Rp50.000</span></div>
+    <div class="rounded-2xl border border-line bg-white p-5 flex items-center justify-between"><span class="font-bold text-[14.5px] text-ink">Banner</span><span class="font-mono text-[13.5px] text-primary-deep">Rp40.000</span></div>
+    <div class="rounded-2xl border border-line bg-white p-5 flex items-center justify-between"><span class="font-bold text-[14.5px] text-ink">Pamflet</span><span class="font-mono text-[13.5px] text-primary-deep">Rp25.000</span></div>
+    <div class="rounded-2xl border border-line bg-white p-5 flex items-center justify-between"><span class="font-bold text-[14.5px] text-ink">Spanduk</span><span class="font-mono text-[13.5px] text-primary-deep">Rp40.000</span></div>
+    <div class="rounded-2xl border border-line bg-white p-5 flex items-center justify-between"><span class="font-bold text-[14.5px] text-ink">Merchandise</span><span class="font-mono text-[13.5px] text-primary-deep">mulai Rp50.000</span></div>
+    <div class="rounded-2xl border border-line bg-white p-5 flex items-center justify-between"><span class="font-bold text-[14.5px] text-ink">Maskot</span><span class="font-mono text-[13.5px] text-primary-deep">mulai Rp150.000</span></div>
+    <div class="rounded-2xl border border-line bg-white p-5 flex items-center justify-between"><span class="font-bold text-[14.5px] text-ink">Ilustrasi</span><span class="font-mono text-[13.5px] text-primary-deep">mulai Rp120.000</span></div>
+    <div class="rounded-2xl border border-line bg-white p-5 flex items-center justify-between sm:col-span-2 lg:col-span-1"><span class="font-bold text-[14.5px] text-ink">Stiker / Label</span><span class="font-mono text-[13.5px] text-primary-deep">Rp25.000</span></div>
+  </div>
+
+  <div class="reveal rounded-[28px] bg-gradient-to-br from-primary via-primary-deep to-accent-deep px-8 sm:px-14 py-12 text-center relative overflow-hidden mt-14">
+    <div class="absolute inset-0 grain opacity-20"></div>
+    <img src="images/logo_typo-05.png" alt="" aria-hidden="true"
+         class="hidden sm:block absolute -left-6 -bottom-8 w-[220px] opacity-15 pointer-events-none select-none" style="filter:brightness(0) invert(1)">
+    <h2 class="relative font-display font-extrabold text-[26px] sm:text-[32px] text-white leading-tight max-w-xl mx-auto">Sudah tahu layanan yang cocok?</h2>
+    <p class="relative text-white/85 text-[14.5px] mt-3 max-w-md mx-auto">Isi form pesanan di beranda, tinggal pilih layanannya dari dropdown.</p>
+    <a href="index.html#form-pesanan"
+       class="relative btn-shine inline-flex items-center gap-2 bg-white text-ink font-bold text-[15px] px-7 py-3.5 rounded-full mt-7 shadow-card-lg hover:-translate-y-0.5 transition-transform">
+      Isi Form Pesanan
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+</main>
+<footer class="bg-ink text-white/70">
+  <div class="max-w-[1240px] mx-auto px-5 sm:px-8 pt-16 pb-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <div class="flex items-center gap-2.5 mb-4">
+          <img src="images/logo-ranahdesain.jpg" alt="Logo Ranahdesain" class="w-9 h-9 rounded-xl object-cover">
+          <span class="font-display font-extrabold text-[17px] text-white">ranahdesain.store</span>
+        </div>
+        <p class="text-[13.5px] leading-relaxed max-w-[220px]">Studio desain grafis untuk UMKM, kampus, dan brand personal di Makassar. Cepat, rapi, dan bersahabat di kantong.</p>
+        <div class="flex items-center gap-2 mt-5">
+          <a href="https://www.instagram.com/ranahdesain_official?igsi=bW41bzJwbXgwNjA4" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/10 hover:bg-primary grid place-items-center transition-colors" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+          <a href="https://www.tiktok.com/@ranah_desainofficial?_r=1&amp;_t=ZS-99CcPedjOky" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/10 hover:bg-primary grid place-items-center transition-colors" aria-label="TikTok"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 2h-3.2v13.9a3 3 0 1 1-2.3-2.9V9.6a6.1 6.1 0 1 0 5.5 6.1V8.4a7.6 7.6 0 0 0 4.4 1.4V6.6a4.3 4.3 0 0 1-4.4-4.3Z"/></svg></a>
+          <a href="https://pin.it/4fwN88xYU" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/10 hover:bg-primary grid place-items-center transition-colors" aria-label="Pinterest"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.6 19.3c0-.8 0-1.8.2-2.6l1.4-6s-.3-.7-.3-1.7c0-1.6 1-2.8 2.1-2.8 1 0 1.5.7 1.5 1.6 0 1-.6 2.4-1 3.8-.2 1 .5 1.8 1.5 1.8 1.8 0 3.1-2.3 3.1-5 0-2.1-1.5-3.6-4.1-3.6-3 0-4.8 2.2-4.8 4.5 0 .9.3 1.5.8 2 .2.2.2.3.2.6l-.3 1c0 .3-.2.4-.5.2-1.3-.5-1.9-2-1.9-3.6 0-2.7 2.3-6 6.8-6 3.6 0 6 2.6 6 5.4 0 3.7-2 6.5-5 6.5-1 0-2-.5-2.3-1.2l-.6 2.5c-.2.9-.7 1.9-1.1 2.6A10 10 0 1 0 12 2Z"/></svg></a>
+          <a href="https://wa.me/6289646417533" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/10 hover:bg-primary grid place-items-center transition-colors" aria-label="WhatsApp"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.1-.2 0-.4.1-.5.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.3 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 2-1.4.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.5-.3Z"/><path d="M12 3.5A8.5 8.5 0 0 0 4.6 16.6L3.5 20.5l4-1a8.5 8.5 0 1 0 4.5-16Z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+        </div>
+        <span class="inline-block mt-5 text-[11px] font-mono px-2.5 py-1 rounded-full bg-white/10">Mitra Rumah BUMN BRI Makassar</span>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-white text-[14px] mb-4">Layanan Kami</h4>
+        <ul class="space-y-2.5 text-[13.5px]">
+          <li><a href="layanan.html" class="hover:text-primary transition-colors">Logo &amp; Branding</a></li>
+          <li><a href="layanan.html" class="hover:text-primary transition-colors">Kelola Media Sosial</a></li>
+          <li><a href="layanan.html" class="hover:text-primary transition-colors">Desain Cetak &amp; Promosi</a></li>
+          <li><a href="layanan.html" class="hover:text-primary transition-colors">Ilustrasi &amp; Maskot</a></li>
+          <li><a href="layanan.html" class="hover:text-primary transition-colors">UI/UX &amp; Landing Page</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-white text-[14px] mb-4">Navigasi</h4>
+        <ul class="space-y-2.5 text-[13.5px]">
+          <li><a href="index.html" class="hover:text-primary transition-colors">Beranda</a></li>
+          <li><a href="layanan.html" class="hover:text-primary transition-colors">Layanan &amp; Harga</a></li>
+          <li><a href="portofolio.html" class="hover:text-primary transition-colors">Portofolio</a></li>
+          <li><a href="faq.html" class="hover:text-primary transition-colors">FAQ</a></li>
+          <li><a href="index.html#form-pesanan" class="hover:text-primary transition-colors">Form Pesanan</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-white text-[14px] mb-4">Kontak</h4>
+        <ul class="space-y-2.5 text-[13.5px] mb-5">
+          <li>WhatsApp — <a href="https://wa.me/6289646417533" target="_blank" rel="noopener" class="hover:text-primary transition-colors">0896-4641-7533</a></li>
+          <li>Jam Operasional — Senin–Sabtu, 09.00–21.00 WITA</li>
+          <li class="text-white/50">Jl. Bangkala BTP D Lorong 6 No. 3, Tamalanrea, Makassar</li>
+        </ul>
+        <form id="newsletter-form" class="flex items-center gap-2">
+          <input type="email" required placeholder="Email kamu" class="min-w-0 flex-1 bg-white/10 border border-white/15 rounded-full px-4 py-2.5 text-[13px] text-white placeholder:text-white/40 focus:bg-white/15 outline-none">
+          <button type="submit" class="shrink-0 w-10 h-10 rounded-full bg-primary hover:bg-primary-deep grid place-items-center transition-colors" aria-label="Berlangganan update">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </form>
+        <p id="newsletter-note" class="text-[11.5px] text-white/40 mt-2"></p>
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-3 mt-14 pt-6 border-t border-white/10 text-[12.5px] text-white/45">
+      <span>© 2026 ranahdesain.store, Makassar. Semua hak dilindungi.</span>
+      <div class="flex items-center gap-5"><a href="#" class="hover:text-white/70 transition-colors">Kebijakan Privasi</a><a href="#" class="hover:text-white/70 transition-colors">Syarat Layanan</a></div>
+    </div>
+  </div>
+</footer>
+
+</div><!-- /#page -->
+
+<a href="https://wa.me/6289646417533?text=Halo%20ranahdesain.store%21%20Saya%20mau%20tanya-tanya%20soal%20jasa%20desain%20%F0%9F%8E%A8" target="_blank" rel="noopener" aria-label="Chat WhatsApp"
+   class="fixed right-5 bottom-5 z-50 w-14 h-14 rounded-full bg-primary hover:bg-primary-deep text-white grid place-items-center shadow-card-lg transition-colors">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.1-.2 0-.4.1-.5.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.3 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 2-1.4.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.5-.3Z"/><path d="M12 3.5A8.5 8.5 0 0 0 4.6 16.6L3.5 20.5l4-1a8.5 8.5 0 1 0 4.5-16Z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+</a>
+
+<script src="main.js"></script>
+</body>
+</html>
