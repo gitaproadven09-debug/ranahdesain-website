@@ -227,6 +227,43 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   }
 
+  /* ---------- hero halaman depan: load from homepage-data.json (index.html) ---------- */
+  const heroBadge = document.getElementById('hero-badge-text');
+  if(heroBadge){
+    fetch('homepage-data.json')
+      .then(res => res.json())
+      .then(data => {
+        if(data.badge) heroBadge.textContent = data.badge;
+
+        const before = document.getElementById('hero-headline-before');
+        const highlight = document.getElementById('hero-headline-highlight');
+        const after = document.getElementById('hero-headline-after');
+        if(before && data.headline_before) before.textContent = data.headline_before;
+        if(highlight && data.headline_highlight) highlight.textContent = data.headline_highlight;
+        if(after && data.headline_after) after.textContent = data.headline_after;
+
+        const desc = document.getElementById('hero-description');
+        if(desc && data.description) desc.textContent = data.description;
+
+        (data.stats || []).forEach((s, i) => {
+          const v = document.getElementById(`hero-stat-${i+1}-value`);
+          const l = document.getElementById(`hero-stat-${i+1}-label`);
+          if(v && s.value) v.textContent = s.value;
+          if(l && s.label) l.textContent = s.label;
+        });
+
+        (data.hero_images || []).forEach((h, i) => {
+          const cap = document.getElementById(`hero-card-${i+1}-caption`);
+          if(cap && h.caption) cap.textContent = h.caption;
+          const content = document.getElementById(`hero-card-${i+1}-content`);
+          if(content && h.image){
+            content.innerHTML = `<img src="${h.image}" alt="${h.caption || ''}" class="w-full h-full object-cover rounded-md">`;
+          }
+        });
+      })
+      .catch(err => console.error('Gagal memuat homepage-data.json', err));
+  }
+
   /* ---------- FAQ accordion ---------- */
   document.querySelectorAll('.faq-item').forEach(item=>{
     const q = item.querySelector('.faq-q');

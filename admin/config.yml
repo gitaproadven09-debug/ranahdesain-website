@@ -2,6 +2,10 @@ backend:
   name: git-gateway
   branch: main   # ganti jadi "master" kalau nama branch default repo GitHub-mu itu
 
+logo_url: "images/logo-ranahdesain.jpg"
+site_url: "https://ranahdesain.store"
+display_url: "https://ranahdesain.store"
+
 media_folder: "images/portfolio-uploads"
 public_folder: "images/portfolio-uploads"
 
@@ -51,3 +55,30 @@ collections:
               - {label: "Rating (1-5)", name: "rating", widget: "number", min: 1, max: 5, default: 5}
               - {label: "Isi Testimoni", name: "quote", widget: "text"}
               - {label: "Foto Pelanggan (opsional)", name: "photo", widget: "image", required: false}
+
+  - name: "homepage"
+    label: "Halaman Utama (Bagian Depan)"
+    files:
+      - name: "homepage"
+        label: "Konten Hero"
+        file: "homepage-data.json"
+        fields:
+          - {label: "Badge kecil di atas judul", name: "badge", widget: "string"}
+          - {label: "Judul - bagian sebelum kata yang di-highlight", name: "headline_before", widget: "string"}
+          - {label: "Judul - kata yang di-highlight (garis bawah warna)", name: "headline_highlight", widget: "string"}
+          - {label: "Judul - bagian setelah kata yang di-highlight", name: "headline_after", widget: "string"}
+          - {label: "Paragraf deskripsi", name: "description", widget: "text"}
+          - label: "Statistik (3 angka di bawah tombol)"
+            name: "stats"
+            widget: "list"
+            summary: "{{fields.value}} — {{fields.label}}"
+            fields:
+              - {label: "Angka (mis. 213+ atau 1–3 hari)", name: "value", widget: "string"}
+              - {label: "Keterangan angka", name: "label", widget: "string"}
+          - label: "3 Kartu Ilustrasi di Sisi Kanan"
+            name: "hero_images"
+            widget: "list"
+            summary: "{{fields.caption}}"
+            fields:
+              - {label: "Gambar (kosongkan untuk pakai ilustrasi default)", name: "image", widget: "image", required: false}
+              - {label: "Keterangan kecil (nama file, mis. feed_ig_final.png)", name: "caption", widget: "string"}
