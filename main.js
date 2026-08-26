@@ -257,7 +257,9 @@ document.addEventListener('DOMContentLoaded', () => {
           if(cap && h.caption) cap.textContent = h.caption;
           const content = document.getElementById(`hero-card-${i+1}-content`);
           if(content && h.image){
-            content.innerHTML = `<img src="${h.image}" alt="${h.caption || ''}" class="w-full h-full object-cover rounded-md">`;
+            content.classList.remove('bg-gradient-to-br','bg-gradient-to-r','from-accent-soft','to-primary-soft','from-primary','via-secondary','to-accent');
+            content.classList.add('bg-bg-soft', 'flex', 'items-center', 'justify-center', 'p-2');
+            content.innerHTML = `<img src="${h.image}" alt="${h.caption || ''}" class="max-w-full max-h-full object-contain rounded-sm">`;
           }
         });
       })
