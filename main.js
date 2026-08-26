@@ -90,9 +90,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: .5 });
   counters.forEach(el=>cio.observe(el));
 
-  /* ---------- portfolio gallery: load from portfolio-data.json (portofolio.html) ---------- */
+  /* ---------- portfolio gallery: load from portfolio-data.json + categories-data.json (portofolio.html) ---------- */
   const galleryEl = document.getElementById('gallery');
-  const pills = document.querySelectorAll('#filter-bar .pill');
+  const filterBar = document.getElementById('filter-bar');
+  let pills = [];
 
   function paintPills(){
     pills.forEach(p=>{
@@ -157,10 +158,26 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closePortfolioModal(); });
 
   if(galleryEl){
-    fetch('portfolio-data.json')
-      .then(res => res.json())
-      .then(data => {
-        const items = Array.isArray(data) ? data : (data.items || []);
+    Promise.all([
+      fetch('portfolio-data.json').then(res => res.json()),
+      fetch('categories-data.json').then(res => res.json()).catch(() => ({ items: [] }))
+    ])
+      .then(([portfolioRaw, categoriesRaw]) => {
+        const items = Array.isArray(portfolioRaw) ? portfolioRaw : (portfolioRaw.items || []);
+        const categories = Array.isArray(categoriesRaw) ? categoriesRaw : (categoriesRaw.items || []);
+
+        // bangun tombol filter kategori secara dinamis (selain "Semua" yang sudah ada di HTML)
+        if(filterBar){
+          categories.forEach(cat => {
+            const btn = document.createElement('button');
+            btn.dataset.filter = cat.value;
+            btn.className = 'pill px-4 py-2 rounded-full text-[13.5px] font-bold border transition-colors';
+            btn.textContent = cat.label;
+            filterBar.appendChild(btn);
+          });
+          pills = document.querySelectorAll('#filter-bar .pill');
+        }
+
         galleryEl.innerHTML = items.map(portfolioCardHTML).join('');
         document.querySelectorAll('#gallery .portfolio-card').forEach(card=>{
           card.addEventListener('click', () => {
@@ -168,6 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if(item) openPortfolioModal(item);
           });
         });
+
         if(pills.length){
           pills.forEach(pill=>{
             pill.addEventListener('click', () => applyFilter(pill.dataset.filter));
@@ -182,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .catch(err => {
         galleryEl.innerHTML = '<p class="col-span-full text-center text-ink-soft text-[14px] py-10">Gagal memuat portofolio. Coba refresh halaman.</p>';
-        console.error('Gagal memuat portfolio-data.json', err);
+        console.error('Gagal memuat portfolio-data.json / categories-data.json', err);
       });
   }
 
