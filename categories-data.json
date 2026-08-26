@@ -1,8 +1,20 @@
 {
   "items": [
-    { "value": "branding", "label": "Branding" },
-    { "value": "sosmed", "label": "Feed IG" },
-    { "value": "uiux", "label": "UI/UX" },
-    { "value": "cetak", "label": "Kemasan & Cetak" }
+    {
+      "value": "banner",
+      "label": "Banner"
+    },
+    {
+      "value": "logo",
+      "label": "Logo"
+    },
+    {
+      "value": "infografis",
+      "label": "Infografis"
+    },
+    {
+      "value": "cetak",
+      "label": "Kemasan & Menu"
+    }
   ]
 }
