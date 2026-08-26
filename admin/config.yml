@@ -25,15 +25,11 @@ collections:
               - {label: "ID unik (huruf kecil, pakai tanda -, tanpa spasi)", name: "id", widget: "string"}
               - {label: "Judul Karya", name: "title", widget: "string"}
               - {label: "Nama Klien", name: "client", widget: "string"}
-              - label: "Kategori"
+              - label: "Kategori (isi salah satu 'kode' dari menu Kelola Kategori di bawah, mis. branding)"
                 name: "category"
-                widget: "select"
-                options:
-                  - {label: "Branding", value: "branding"}
-                  - {label: "Sosial Media", value: "sosmed"}
-                  - {label: "UI/UX", value: "uiux"}
-                  - {label: "Cetak", value: "cetak"}
-              - {label: "Label Kategori (teks yang tampil di badge)", name: "categoryLabel", widget: "string"}
+                widget: "string"
+                hint: "Harus persis sama dengan 'Kode Kategori' yang ada di menu Kelola Kategori (huruf kecil semua), supaya filter di halaman portofolio jalan."
+              - {label: "Label Kategori (teks pendek yang tampil di badge kartu, mis. Branding)", name: "categoryLabel", widget: "string"}
               - {label: "Gambar", name: "image", widget: "image", required: false, hint: "Upload gambar karya di sini"}
               - {label: "Deskripsi (kenapa & bagaimana desain ini dibuat)", name: "description", widget: "text"}
 
@@ -82,3 +78,18 @@ collections:
             fields:
               - {label: "Gambar (kosongkan untuk pakai ilustrasi default)", name: "image", widget: "image", required: false}
               - {label: "Keterangan kecil (nama file, mis. feed_ig_final.png)", name: "caption", widget: "string"}
+
+  - name: "categories"
+    label: "Kelola Kategori Portofolio"
+    files:
+      - name: "categories"
+        label: "Daftar Kategori"
+        file: "categories-data.json"
+        fields:
+          - label: "Daftar Kategori"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.label}} ({{fields.value}})"
+            fields:
+              - {label: "Kode Kategori (huruf kecil, tanpa spasi, mis. branding)", name: "value", widget: "string", hint: "Ini yang harus Anda ketik persis di field 'Kategori' waktu nambah item Portofolio."}
+              - {label: "Nama yang Tampil (mis. Branding)", name: "label", widget: "string"}
