@@ -1,0 +1,175 @@
+{
+  "items": [
+    {
+      "id": "logo-guideline-fashion",
+      "title": "Logo & Guideline",
+      "client": "Brand Fashion Lokal",
+      "category": "branding",
+      "categoryLabel": "Branding",
+      "image": "",
+      "description": "Logo dibuat dengan pendekatan minimalis agar mudah diaplikasikan ke berbagai media — dari label baju sampai feed Instagram. Kami mulai dari riset karakter brand, lalu eksplorasi 3 arah desain sebelum masuk ke guideline warna dan tipografi final."
+    },
+    {
+      "id": "logo-sunat-modern",
+      "title": "Logo Usaha",
+      "client": "UMKM — Sunat Modern",
+      "category": "branding",
+      "categoryLabel": "Branding",
+      "image": "",
+      "description": "Klien butuh identitas visual yang terlihat profesional namun tetap ramah. Kami pilih palet warna hangat dan bentuk logo yang sederhana supaya mudah diingat dan gampang dicetak di berbagai ukuran, dari kartu nama sampai spanduk."
+    },
+    {
+      "id": "feed-ig-kuliner-9slide",
+      "title": "Feed Instagram — 9 slide",
+      "client": "Kuliner UMKM",
+      "category": "sosmed",
+      "categoryLabel": "Feed IG",
+      "image": "",
+      "description": "Feed dirancang dengan grid 3x3 agar terlihat rapi saat dibuka di profil Instagram. Setiap slide punya elemen visual yang konsisten (warna, font, layout) supaya brand langsung dikenali meski pelanggan baru scroll sekilas."
+    },
+    {
+      "id": "carousel-promo-event-kampus",
+      "title": "Carousel Promo — 6 slide",
+      "client": "Event Kampus",
+      "category": "sosmed",
+      "categoryLabel": "Feed IG",
+      "image": "",
+      "description": "Dibuat untuk promosi acara kampus dengan gaya modern dan energik. Alur cerita carousel disusun agar audiens membaca sampai slide terakhir — dari hook di slide pertama sampai CTA pendaftaran di slide penutup."
+    },
+    {
+      "id": "landing-page-umkm-toko-online",
+      "title": "Landing Page UMKM",
+      "client": "Toko Online",
+      "category": "uiux",
+      "categoryLabel": "UI/UX",
+      "image": "",
+      "description": "Landing page dibuat fokus pada satu tujuan: mendorong pengunjung checkout atau chat WhatsApp. Struktur halaman disusun dari hero, keunggulan produk, testimoni, sampai CTA yang jelas dan mudah diklik dari HP."
+    },
+    {
+      "id": "poster-label-produk-umkm",
+      "title": "Poster + Label Produk",
+      "client": "UMKM Kuliner",
+      "category": "cetak",
+      "categoryLabel": "Kemasan",
+      "image": "",
+      "description": "Label dan poster promosi dibuat senada agar terlihat sebagai satu identitas brand yang sama. Kami perhatikan keterbacaan teks dari jarak jauh karena poster ini akan ditempel di etalase toko."
+    },
+    {
+      "id": "brosur-stand-banner-umkm",
+      "title": "Brosur + Stand Banner",
+      "client": "UMKM",
+      "category": "cetak",
+      "categoryLabel": "Cetak",
+      "image": "",
+      "description": "Brosur dan stand banner dirancang sepasang untuk kebutuhan pameran/bazar. Informasi disusun berjenjang — judul besar dulu, baru detail produk — supaya pengunjung tetap tertarik walau hanya lewat sekilas."
+    },
+    {
+      "id": "spanduk-banner-wisuda-organisasi",
+      "title": "Spanduk & Banner Wisuda",
+      "client": "Organisasi Kampus",
+      "category": "cetak",
+      "categoryLabel": "Cetak",
+      "image": "",
+      "description": "Desain bertema perayaan kelulusan dengan warna-warna cerah dan elemen dekoratif khas wisuda. Ukuran teks dan foto diatur agar tetap proporsional saat dicetak dalam ukuran besar."
+    },
+    {
+      "id": "stiker-label-produk-umkm",
+      "title": "Stiker Label Produk",
+      "client": "UMKM",
+      "category": "branding",
+      "categoryLabel": "Branding",
+      "image": "",
+      "description": "Stiker label dibuat agar konsisten dengan identitas brand di kemasan lain. Kami pertimbangkan ukuran cetak stiker (biasanya kecil) supaya semua informasi penting tetap terbaca jelas."
+    },
+    {
+      "id": "ppt-mengajar-dosen",
+      "title": "Desain PPT Mengajar",
+      "client": "Klien Dosen",
+      "category": "uiux",
+      "categoryLabel": "Presentasi",
+      "image": "",
+      "description": "Template presentasi dibuat rapi dan tidak ramai supaya audiens fokus ke materi, bukan ke desainnya. Kami sediakan beberapa layout slide (judul, poin-poin, gambar, kutipan) yang bisa dipakai berulang."
+    },
+    {
+      "id": "cover-buku-naskah-akademik",
+      "title": "Cover Buku",
+      "client": "Naskah Akademik",
+      "category": "cetak",
+      "categoryLabel": "Cetak",
+      "image": "",
+      "description": "Cover dirancang dengan gaya akademis namun tetap menarik secara visual. Tipografi judul jadi fokus utama, dipadukan dengan ilustrasi/warna yang mencerminkan isi naskah."
+    },
+    {
+      "id": "backdrop-event-organisasi",
+      "title": "Backdrop Event",
+      "client": "Organisasi & Komunitas",
+      "category": "sosmed",
+      "categoryLabel": "Feed IG",
+      "image": "",
+      "description": "Backdrop dibuat untuk kebutuhan dokumentasi foto acara. Logo sponsor dan nama acara disusun rapi dengan hierarki yang jelas agar tetap terbaca di hasil foto."
+    },
+    {
+      "id": "xbanner-wisuda-mission-completed",
+      "title": "X-Banner Wisuda",
+      "client": "Alumni Kampus",
+      "category": "cetak",
+      "categoryLabel": "Cetak",
+      "image": "images/stand-banner/wisuda-mission-completed.jpg",
+      "description": "X-banner wisuda dengan konsep 'mission completed' — playful tapi tetap elegan. Foto klien jadi elemen utama, dipadukan dengan ornamen toga dan ucapan selamat."
+    },
+    {
+      "id": "xbanner-wisuda-happy-graduate",
+      "title": "X-Banner Wisuda",
+      "client": "Trio Alumni Kampus",
+      "category": "cetak",
+      "categoryLabel": "Cetak",
+      "image": "images/stand-banner/wisuda-happy-graduate.jpg",
+      "description": "Dibuat untuk 3 orang alumni sekaligus dalam satu banner. Tantangannya adalah menyusun komposisi foto agar ketiganya terlihat seimbang dan tetap jadi satu kesatuan desain."
+    },
+    {
+      "id": "xbanner-umkm-keripik-pisang",
+      "title": "X-Banner Produk",
+      "client": "UMKM Keripik Pisang",
+      "category": "cetak",
+      "categoryLabel": "Cetak",
+      "image": "images/stand-banner/umkm-keripik-pisang.jpg",
+      "description": "Banner produk dengan foto kemasan sebagai fokus utama, dilengkapi harga dan varian rasa. Warna cerah dipilih untuk menonjolkan kesan renyah dan menggugah selera."
+    },
+    {
+      "id": "xbanner-umkm-sale-promo",
+      "title": "X-Banner Promo",
+      "client": "UMKM Fashion Anak",
+      "category": "cetak",
+      "categoryLabel": "Cetak",
+      "image": "images/stand-banner/umkm-sale-promo.jpg",
+      "description": "Banner promo diskon dibuat dengan hierarki jelas: persentase diskon paling besar, lalu nama produk, baru syarat & ketentuan. Tujuannya agar info diskon langsung menarik perhatian dari jauh."
+    },
+    {
+      "id": "xbanner-umkm-laundry-essal",
+      "title": "X-Banner Jasa",
+      "client": "UMKM Laundry",
+      "category": "cetak",
+      "categoryLabel": "Cetak",
+      "image": "images/stand-banner/umkm-laundry-essal.jpg",
+      "description": "Banner jasa laundry dirancang menonjolkan daftar layanan dan kontak agar calon pelanggan langsung tahu cara memesan. Ikon-ikon sederhana dipakai supaya cepat dipahami."
+    },
+    {
+      "id": "xbanner-umkm-krenyes-bobanya",
+      "title": "X-Banner Produk",
+      "client": "UMKM Minuman Boba",
+      "category": "cetak",
+      "categoryLabel": "Cetak",
+      "image": "images/stand-banner/umkm-krenyes-bobanya.jpg",
+      "description": "Desain dibuat playful dan colorful sesuai target pasar anak muda. Foto produk minuman ditonjolkan besar di bagian atas agar langsung menarik perhatian dari kejauhan."
+    },
+    {
+      "id": "xbanner-umkm-pentol-bakso-bakar",
+      "title": "X-Banner Produk",
+      "client": "UMKM Kuliner",
+      "category": "cetak",
+      "categoryLabel": "Cetak",
+      "image": "images/stand-banner/umkm-pentol-bakso-bakar.jpg",
+      "description": "Banner kuliner dengan foto produk close-up agar terlihat menggugah selera, dipadukan tipografi tebal untuk nama produk supaya mudah dibaca dari jarak beberapa meter."
+    }
+  ]
+}

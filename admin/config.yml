@@ -1,0 +1,53 @@
+backend:
+  name: git-gateway
+  branch: main   # ganti jadi "master" kalau nama branch default repo GitHub-mu itu
+
+media_folder: "images/portfolio-uploads"
+public_folder: "images/portfolio-uploads"
+
+collections:
+  - name: "portfolio"
+    label: "Portofolio"
+    files:
+      - name: "portfolio"
+        label: "Daftar Karya Portofolio"
+        file: "portfolio-data.json"
+        fields:
+          - label: "Daftar Karya"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}} — {{fields.client}}"
+            fields:
+              - {label: "ID unik (huruf kecil, pakai tanda -, tanpa spasi)", name: "id", widget: "string"}
+              - {label: "Judul Karya", name: "title", widget: "string"}
+              - {label: "Nama Klien", name: "client", widget: "string"}
+              - label: "Kategori"
+                name: "category"
+                widget: "select"
+                options:
+                  - {label: "Branding", value: "branding"}
+                  - {label: "Sosial Media", value: "sosmed"}
+                  - {label: "UI/UX", value: "uiux"}
+                  - {label: "Cetak", value: "cetak"}
+              - {label: "Label Kategori (teks yang tampil di badge)", name: "categoryLabel", widget: "string"}
+              - {label: "Gambar", name: "image", widget: "image", required: false, hint: "Upload gambar karya di sini"}
+              - {label: "Deskripsi (kenapa & bagaimana desain ini dibuat)", name: "description", widget: "text"}
+
+  - name: "testimonials"
+    label: "Testimoni Pelanggan"
+    files:
+      - name: "testimonials"
+        label: "Daftar Testimoni"
+        file: "testimonials-data.json"
+        fields:
+          - label: "Daftar Testimoni"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.business}}"
+            fields:
+              - {label: "ID unik (huruf kecil, pakai tanda -, tanpa spasi)", name: "id", widget: "string"}
+              - {label: "Nama Pelanggan", name: "name", widget: "string"}
+              - {label: "Bisnis / Jabatan", name: "business", widget: "string"}
+              - {label: "Rating (1-5)", name: "rating", widget: "number", min: 1, max: 5, default: 5}
+              - {label: "Isi Testimoni", name: "quote", widget: "text"}
+              - {label: "Foto Pelanggan (opsional)", name: "photo", widget: "image", required: false}
